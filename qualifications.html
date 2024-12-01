@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" id="stylesheet">
+    <script src='functions.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>-Qualifications-</h2>
+        <p class="about">Below you will find my resume, technical skills, and my professional areas of interest in
+            addition to <br>links to my LinkedIn and Github.</p>
+
+
+    </div>
+
+    <div class="container">
+        <H2 class="h2">-Resume-</H2>
+
+        <iframe src="https://drive.google.com/file/d/1G86IxctaEt1CySHWpGDjfmQMQonMhXBe/preview" width="640" height="800"
+            allow="autoplay"></iframe>
+    </div>
+
+    <div class="container">
+        <H2 class="h2">-Technical Skills-</H2>
+
+        <p class="about"> Programming: Python, C++, JavaScript <br> Web Development: HTML, CSS, Bootstrap </p>
+    </div>
+
+    <div class="container">
+        <H2 class="h2">-Technical Areas of Interest-</H2>
+
+        <h3>Full-Stack Development</h3>
+        <p class="about"> In the summer of 2022, I took a web development course to expand my computer science
+            knowledge. <br> The skills I learned from that course along with other bits of information I've picked up
+            along
+            my software <br> journey have grown within me a passion for both the front-end and back-end sides of web
+            development. </p>
+
+        <h3>AI/Machine Learning</h3>
+        <p class="about"> With recent developments made in the field of artificial intelligence such as OpenAI's ChatGPT
+            and the Google <br> AI assistant, it's no wonder this field is becoming more popular. In order to stay
+            informed
+            in the world of software, <br> I strive to learn more about the capabilities of artificial intelligence and
+            what
+            it can do to improve our world.</p>
+
+        <button onclick="light_mode()">Light Mode</button>
+        <button onclick="dark_mode()">Dark Mode</button>
+    </div>
+
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="technical.html">Technical Portfolio</a>
+        <a href="service.html">Service</a>
+        <a href="ai.html">AI Generated</a>
+    </div>
+
+    <script>
+        function toggleCSS() {
+            var stylesheet = document.getElementById('stylesheet');
+            if (stylesheet.getAttribute('href') === 'index.css') {
+                stylesheet.setAttribute('href', 'index2.css');
+            } else {
+                stylesheet.setAttribute('href', 'index.css');
+            }
+        }
+    </script>
+</body>
+
+</html>
